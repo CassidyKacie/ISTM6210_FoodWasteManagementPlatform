@@ -577,6 +577,12 @@ progress {
   height: auto;
 }
 
+.img-fluidfooter {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
