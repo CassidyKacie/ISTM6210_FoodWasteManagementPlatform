@@ -11,7 +11,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Zero Food Waste</title>
+	<title>Zero Food Waste - Waste Pick-Up Request Form</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	<meta name="description" content="This is meta description">
 	<meta name="author" content="Themefisher">
@@ -116,11 +116,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-8 mx-auto text-center">
-				<h2 class="mb-3 text-capitalize">Login Page</h2>
+				<h2 class="mb-3 text-capitalize">Waste Pick-Up Request</h2>
 				<ul class="list-inline breadcrumbs text-capitalize" style="font-weight:500">
-					<li class="list-inline-item"><a href="index.html">Home</a>
+					<li class="list-inline-item"><a href="food-business-services.html">Food Business</a>
 					</li>
-					<li class="list-inline-item">/ &nbsp; <a href="login.html">login</a>
+					<li class="list-inline-item">/ &nbsp; <a href="login.html">Waste Pick-Up</a>
 					</li>
 				</ul>
 			</div>
@@ -130,6 +130,10 @@
 </section>
 
 <section class="section">
+    <div class="col-12 text-center mb-4">
+    <h4>Request Placement Form for Waste Disposal</h4>
+	<p>After submitting this form, you will receive confirmation that your pick-up has been scheduled</p>
+	</div>
 	<div class="container">
 		<div class="row justify-content-center align-items-center">
 			<!--div class="col-lg-6">
@@ -143,29 +147,53 @@
 				<div class="shadow rounded p-5 bg-white">
 					<div class="row">
 						<div class="col-12 text-center mb-4">
-							<h4>Login Page</h4>
+					<iframe src="https://www.google.com/maps/d/embed?mid=1N-glXItrO2aPhLbdjWFyit87H8w&ehbc=2E312F" width="640" height="480"></iframe>
 						</div>
 						<div class="col-lg-6 mx-auto">
 							<div class="contact-form">
-								<form action="#!">
+								<form action="confirmation.php" method="post">
 									<div class="form-group mb-4 pb-2">
-										<label for="exampleFormControlInput1" class="form-label">User Name</label>
+										<label for="exampleFormControlInput1" class="form-label">Food Business Name</label>
 										<input type="text" class="form-control shadow-none" id="contact_name">
 									</div>
 									<div class="form-group mb-4 pb-2">
-										<label for="exampleFormControlInput1" class="form-label">Password</label>
+										<label for="exampleFormControlInput2" class="form-label">Email</label>
 										<input type="email" class="form-control shadow-none" id="contact_email">
 									</div>
-									<!--div class="form-group mb-4 pb-2">
-										<label for="exampleFormControlTextarea1" class="form-label">Write Message</label>
-										<textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="3"></textarea>
-									</div-->
-									<button class="btn btn-primary w-100" type="submit">Login</button>
 									<div class="form-group mb-4 pb-2">
-									<ul class="list-unstyled">
-										<li class="mb-2"><a href="#!">Forgot password?</a></li>
-										<li class="mb-2"><a href="signup.html">A New User?</a></li>
-										</ul>
+										<label for="exampleFormControlInput2" class="form-label">Phone Number</label>
+										<input type="tel" class="form-control shadow-none" id="contact_phone">
+									</div>
+								    <div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput2" class="form-label">Pick-Up Address</label>
+										<input type="text" class="form-control shadow-none" id="address">
+									</div>
+									<div class="form-group mb-4 pb-2">
+									<label for="wasteType">Type of Waste:</label>
+									<select class="form-control shadow-none" id="wasteType" name="wasteType" required>
+									    <option value="organic">Organic Waste</option>
+									    <option value="recyclable">Recyclable Waste</option>
+									    <option value="non-recyclable">Non-Recyclable Waste</option>
+									</select>
+									</div>
+									<div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput2" class="form-label">Estimated Quantity (lbs)</label>
+										<input type="number" class="form-control shadow-none" id="quantity">
+									</div>
+									<div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput2" class="form-label">Select a Preferred Pick-Up Date</label>
+										<input type="date" class="form-control shadow-none" id="datetime">
+									</div>
+									<div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput2" class="form-label">Select a Preferred Pick-Up Time</label>
+										<input type="time" class="form-control shadow-none" id="datetime">
+									</div>
+									<div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlTextarea1" class="form-label">Additional Comments</label>
+										<textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+									<button class="btn btn-primary w-100" type="submit">Submit your Request</button>
+									<div class="form-group mb-4 pb-2">
 									</div>
 								</form>
 							</div>
